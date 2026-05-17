@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formula 1 Racing</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="logo">
+                <span class="f1-logo">F1</span>
+            </div>
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#drivers" class="nav-link">Drivers</a></li>
+                <li><a href="#teams" class="nav-link">Teams</a></li>
+                <li><a href="#schedule" class="nav-link">Schedule</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1 class="hero-title">FORMULA ONE</h1>
+            <p class="hero-subtitle">Experience the Ultimate Speed and Precision</p>
+            <a href="#drivers" class="cta-button">Explore Now</a>
+        </div>
+        <div class="hero-image">
+            <div class="car-placeholder">
+                <svg viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Car body -->
+                    <ellipse cx="100" cy="50" rx="80" ry="25" fill="#DC143C"/>
+                    <!-- Car cockpit -->
+                    <rect x="85" y="35" width="30" height="20" rx="3" fill="#1a1a1a"/>
+                    <!-- Wheels -->
+                    <circle cx="40" cy="65" r="15" fill="#1a1a1a" stroke="#DC143C" stroke-width="2"/>
+                    <circle cx="160" cy="65" r="15" fill="#1a1a1a" stroke="#DC143C" stroke-width="2"/>
+                    <!-- Front wing -->
+                    <polygon points="20,50 15,45 15,55" fill="#DC143C"/>
+                    <!-- Rear wing -->
+                    <polygon points="180,50 185,45 185,55" fill="#DC143C"/>
+                    <!-- Speed lines -->
+                    <line x1="5" y1="45" x2="0" y2="45" stroke="#DC143C" stroke-width="2"/>
+                    <line x1="5" y1="50" x2="0" y2="50" stroke="#DC143C" stroke-width="2"/>
+                    <line x1="5" y1="55" x2="0" y2="55" stroke="#DC143C" stroke-width="2"/>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <!-- Drivers Section -->
+    <section class="drivers" id="drivers">
+        <div class="container">
+            <h2 class="section-title">Elite Drivers</h2>
+            <div class="drivers-grid">
+                <!-- Driver Card 1 -->
+                <div class="driver-card">
+                    <div class="driver-image">MA</div>
+                    <h3 class="driver-name">Max Verstappen</h3>
+                    <p class="driver-team">Red Bull Racing</p>
+                    <div class="driver-stats">
+                        <span class="stat">Championships: 3</span>
+                        <span class="stat">Wins: 50+</span>
+                    </div>
+                    <button class="view-btn">View Profile</button>
+                </div>
+
+                <!-- Driver Card 2 -->
+                <div class="driver-card">
+                    <div class="driver-image">LH</div>
+                    <h3 class="driver-name">Lewis Hamilton</h3>
+                    <p class="driver-team">Mercedes</p>
+                    <div class="driver-stats">
+                        <span class="stat">Championships: 7</span>
+                        <span class="stat">Wins: 103</span>
+                    </div>
+                    <button class="view-btn">View Profile</button>
+                </div>
+
+                <!-- Driver Card 3 -->
+                <div class="driver-card">
+                    <div class="driver-image">CS</div>
+                    <h3 class="driver-name">Charles Leclerc</h3>
+                    <p class="driver-team">Ferrari</p>
+                    <div class="driver-stats">
+                        <span class="stat">Championships: 0</span>
+                        <span class="stat">Wins: 5</span>
+                    </div>
+                    <button class="view-btn">View Profile</button>
+                </div>
+
+                <!-- Driver Card 4 -->
+                <div class="driver-card">
+                    <div class="driver-image">LN</div>
+                    <h3 class="driver-name">Lando Norris</h3>
+                    <p class="driver-team">McLaren</p>
+                    <div class="driver-stats">
+                        <span class="stat">Championships: 0</span>
+                        <span class="stat">Wins: 1</span>
+                    </div>
+                    <button class="view-btn">View Profile</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Teams Section -->
+    <section class="teams" id="teams">
+        <div class="container">
+            <h2 class="section-title">Teams</h2>
+            <div class="teams-grid">
+                <div class="team-card">
+                    <h3>Red Bull Racing</h3>
+                    <p>Peak Performance</p>
+                </div>
+                <div class="team-card">
+                    <h3>Mercedes</h3>
+                    <p>Technical Excellence</p>
+                </div>
+                <div class="team-card">
+                    <h3>Ferrari</h3>
+                    <p>Racing Heritage</p>
+                </div>
+                <div class="team-card">
+                    <h3>McLaren</h3>
+                    <p>Innovation & Speed</p>
+                </div>
+                <div class="team-card">
+                    <h3>Alpine</h3>
+                    <p>Precision Engineering</p>
+                </div>
+                <div class="team-card">
+                    <h3>Aston Martin</h3>
+                    <p>Luxury Performance</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Race Schedule Section -->
+    <section class="schedule" id="schedule">
+        <div class="container">
+            <h2 class="section-title">Upcoming Races</h2>
+            <div class="schedule-list">
+                <div class="race-item">
+                    <div class="race-number">1</div>
+                    <div class="race-info">
+                        <h4>Monaco Grand Prix</h4>
+                        <p>May 26, 2026 • Monte Carlo, Monaco</p>
+                    </div>
+                    <button class="race-btn">Details</button>
+                </div>
+                <div class="race-item">
+                    <div class="race-number">2</div>
+                    <div class="race-info">
+                        <h4>Canadian Grand Prix</h4>
+                        <p>June 9, 2026 • Montreal, Canada</p>
+                    </div>
+                    <button class="race-btn">Details</button>
+                </div>
+                <div class="race-item">
+                    <div class="race-number">3</div>
+                    <div class="race-info">
+                        <h4>British Grand Prix</h4>
+                        <p>July 5, 2026 • Silverstone, UK</p>
+                    </div>
+                    <button class="race-btn">Details</button>
+                </div>
+                <div class="race-item">
+                    <div class="race-number">4</div>
+                    <div class="race-info">
+                        <h4>German Grand Prix</h4>
+                        <p>July 26, 2026 • Hockenheim, Germany</p>
+                    </div>
+                    <button class="race-btn">Details</button>
+                </div>
+                <div class="race-item">
+                    <div class="race-number">5</div>
+                    <div class="race-info">
+                        <h4>Belgian Grand Prix</h4>
+                        <p>August 30, 2026 • Spa, Belgium</p>
+                    </div>
+                    <button class="race-btn">Details</button>
+                </div>
+                <div class="race-item">
+                    <div class="race-number">6</div>
+                    <div class="race-info">
+                        <h4>Italian Grand Prix</h4>
+                        <p>September 6, 2026 • Monza, Italy</p>
+                    </div>
+                    <button class="race-btn">Details</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>About F1</h4>
+                    <ul>
+                        <li><a href="#history">History</a></li>
+                        <li><a href="#rules">Rules & Regulations</a></li>
+                        <li><a href="#news">Latest News</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#drivers">Drivers</a></li>
+                        <li><a href="#teams">Teams</a></li>
+                        <li><a href="#schedule">Schedule</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Facebook</a>
+                        <a href="#" class="social-link">Twitter</a>
+                        <a href="#" class="social-link">Instagram</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Formula 1 Racing. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
